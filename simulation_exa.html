@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>博汇教育</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/simulation.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+
+<!---头部--->
+<div id="header">
+	 <img src="images/moni_exa_bg.jpg" class="bg" />
+      <div class="header">
+      	<a class="exa_title" href="#">博汇大题库</a>
+        <div class="exa_nav">
+        	<a href="#">首页</a>
+        	<a href="#">专题练习</a>
+        	<a href="#">历年真题</a>
+        	<a href="#">模拟试题</a>
+        	<a href="#">每日一测</a>
+        </div>
+        <div class="exa_top_right">
+        	<p>博汇实习生</p>
+            <a href="#" class="a1"></a>
+            <a href="#" class="a2"></a>
+        </div>
+      </div>
+</div>
+
+<div id="now_where">
+    <div class="now_where">
+    	<p><a href="#">专项练习</a>><a href="#">公务员_行测_常识判断</a></p>
+    </div>
+</div>
+<div id="right_nav">
+	<div class="time">
+    	<span>00:00</span>
+    	<a href="#">暂停</a>
+    </div>
+	<div class="nav_btn">
+    	<a href="#" class="nav_btn_1">交卷</a>
+    	<a href="#" class="nav_btn_2">返回</a>
+    	<a href="#" class="nav_btn_3">答题卡</a>
+    </div>
+</div>
+<div id="exa">
+	<div class="exa"> 
+    	<div class="moni_qa">
+                <p><b>1</b><span>( 单选题 ) <i>下列国家中，尚未加入欧元区的是（    ）。</i></span></p>
+                <p><a href="javascript:void(0);" data-choosenun="1" class="choose1">A. 西班牙</a></p>
+                <p><a href="javascript:void(0);" data-choosenun="2" class="choose2">B. 比利时</a></p>
+                <p><a href="javascript:void(0);" data-choosenun="3" class="choose3">C. 卢森堡</a></p>
+                <p><a href="javascript:void(0);" data-choosenun="4" class="choose4">D. 英国</a></p>
+                <p></p>
+                <div class="exa_qa_clickrow">
+                	<div class="exa_qa_clickdiv">
+                    	<a href="javascript:void(0);" data-choosenun="1" class="choose1" >A</a>
+                    	<a href="javascript:void(0);" data-choosenun="2" class="choose2" >B</a>
+                    	<a href="javascript:void(0);" data-choosenun="3" class="choose3" >C</a>
+                    	<a href="javascript:void(0);" data-choosenun="4" class="choose4" >D</a>
+                    </div>
+                </div>
+        </div>
+    	<div class="moni_run">
+        	<div class="moni_run_div">
+                <a href="javascript:void(0);" class="issign">标记本题</a>
+                <a href="javascript:void(0);">上一题</a>
+                <a href="javascript:void(0);">下一题</a>
+                <a href="javascript:void(0);" class="iscollection" >●&nbsp;收藏试题</a>
+            </div>
+            <form action="#">
+            	<span>共 187 题 转到</span><input value="" type="text" /><span>题</span>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$('.issign').click(function(){
+			$(this).toggleClass('sign');
+		});
+	$('.iscollection').click(function(){
+			$(this).toggleClass('sign');
+		});
+	$('.moni_qa p a').each(function(index, element){
+        $(this).click(function(){
+			$(this).parent().parent().find('.isclick1').removeClass("isclick1");
+			$(this).parent().parent().find('.isclick2').removeClass("isclick2");
+			$(this).addClass("isclick1");	
+			var num=$(this).data("choosenun");
+			$(this).parent().parent().find($('.exa_qa_clickdiv .choose'+num)).addClass("isclick2");	
+		});
+    });
+	$('.moni_qa .exa_qa_clickdiv a').each(function(index, element) {
+        $(this).click(function(){
+			$(this).parent().parent().parent().find('.isclick1').removeClass("isclick1");
+			$(this).parent().parent().parent().find('.isclick2').removeClass("isclick2");
+			$(this).addClass("isclick2");	
+			var num=$(this).data("choosenun");
+			$(this).parent().parent().parent().find($('p .choose'+num)).addClass("isclick1");	
+		});
+    });
+});
+</script>
+
+
+<div style="clear:none; height:30px;"></div>
+<!---底部--->
+<div id="footer">
+	<div class="footer">
+	     <div class="ft_nav">
+            <a href="#" target="_blank">关于博汇</a>
+            <span>&nbsp;|&nbsp;</span>
+            <a href="#" target="_blank">联系我们</a>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备10004654号</span>
+        </div>
+            <div class="ft_copyright">
+                <a href="#" class="appbtn" target="_blank">
+                	<img src="images/appbtn_bg.png" />
+                </a>
+                <span>当前有<b>3219</b>个用户在线答题</span>
+            </div>
+      
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

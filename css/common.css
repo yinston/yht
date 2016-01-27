@@ -73,7 +73,7 @@ input:focus {
 	padding:0 !important;
 	background: none !important;
 	margin-top:10px;
-	
+	margin-left:10px;
 }
 .common_box .top img {
 	float:left;
@@ -117,9 +117,10 @@ input:focus {
     font-size: 12px;
     color: #000;
     padding: 0 0 0 3%;
+	margin-left:20px;
     width: 97%;
     height: auto;
-	line-height:24px;
+	line-height:27px;
 	display:inline-block;
     background: url(../images/li_bg.gif) no-repeat 2px 12px;
 }
@@ -403,23 +404,27 @@ label#lblSelect::after
 
 
 /*导航*/
-#nav{margin: 2px auto 0 auto;width:965px;height:41px;background:url(../images/nav.jpg) repeat-x;}
-#nav a{color:#FFF;text-align:center;width:87px;height:41px;line-height:41px;display:block;float:left;}
-#nav a:hover{background:#FFF;color:#000;}
+#nav{margin: 2px auto 0 auto;width:965px;height:41px;background:url(../images/nav.jpg) repeat-x;position:relative;}
+#nav a{color:#FFF;text-align:center;width:80px;height:41px;line-height:41px;display:block;float:left;}
+#nav a:hover{background:#FFF;color:#000;height:42px;z-index:1}
 
 #navcontent{margin: 0 auto 0 auto;width:965px;}
+.outnavcontent{ background:url(images/nav_bgbg1.gif) no-repeat; position:relative;  width:auto; height:auto; display:block;}
+
 /*小*/
-.comnav{ width:670px; height:160px; border:1px solid #e70304; display:block; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.comnav{ width:670px; height:160px; border:1px solid #e70304; display:block; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; background:#FFF; z-index:50; position:absolute;top:0;}
 .comnav .bannerbox{ width:190px; height:160px;  display:inline-block; float:right; margin-right:20px; }
 .comnav .bannerbox img{ display:block; float:left; margin:5px 0;}
-.comnav .con { width:430px; height:160px; margin-left:20px;   color:#727272; display:block; float:left; }
+.comnav .con { width:430px; height:160px; margin-left:20px;   color:#727272; display:block; float:left;}
 .comnav .con a{ padding:0 2px; color:#727272; }
 .comnav .con a:hover{ color:#e70304; text-decoration:underline;}
 .comnav .con .one{ color:#2f2f2f; }
 .comnav .con .more{ width:100%; text-align:right; display:block; float:right;}
 
+#mainnav_11 {height:40px;width:250px;} 
+#mainnav_11 .con a{color:#000000}
 /*大*/
-.comnavbig{ width:963px; height:160px; border:1px solid #e70304; display:block; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.comnavbig{ width:963px; height:160px; border:1px solid #e70304; display:block; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; background:#FFF; z-index:50; position:absolute; top:0;}
 .comnavbig ul{ margin-left:20px; margin-top:9px; width:943px; height:160px; }
 .comnavbig ul li{ width:121px; height:144px; display:block; float:left; margin-right:10px; } 
 .comnavbig ul li .gun{ width:121px; text-align:center; }

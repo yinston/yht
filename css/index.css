@@ -449,6 +449,7 @@
 	position:absolute;
 	top:50px;
 	width:375px;
+	display:none;
 }
 
 .boxthree .right .content li{
@@ -579,7 +580,7 @@
 	top:120px;
 	width:500px;
 	height:auto;
-	display:block;
+	display:none;
 }
 
 .boxfour .left .content ul{
@@ -643,7 +644,7 @@
 	top:120px;
 	width:405px;
 	height:auto;
-	display:block;
+	
 }
 
 .boxfour .right .content ul{
@@ -710,6 +711,10 @@
 	display:block;
 	text-align:center;
 	line-height:30px;
+}
+.exam .box .content a:hover{
+	background:red;
+	color:#FFFFFF;
 }
 /*中间广告*/
 .middle-banner{
@@ -1438,7 +1443,7 @@
 	height:285px;
 }
 .lastbox .lastbanner { width:680px; height:129px; position:relative;display:block; }
-.lastbox .lastbanner .box{ width:660px; height:129px; float:left; display:block; position:absolute; left:20px; }
+.lastbox .lastbanner .box{ width:627px; height:129px; float:left; display:block; position:absolute; left:20px; }
 .lastbox .lastbanner .box img{ margin:0 4px; }
 .lastbox .lastbanner .pre{position:absolute;background:url(../images/pre.gif) no-repeat center center;width:18px;float:left;height:129px;}
 .lastbox .lastbanner .next{position:absolute;right:0;background:url(../images/next.gif) no-repeat center center;width:18px;height:129px;}
@@ -1502,5 +1507,5 @@
 	display:block;
 }
 
-
-
+.lastbanner .box{overflow:hidden;}
+.img_go{position:absolute;height:129px;;float:left;width:25011px;display:block}

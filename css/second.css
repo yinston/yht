@@ -8,6 +8,7 @@
 .common_lively ul li{ width:48%; margin-right:1%; margin-bottom:15px; float:left; line-height:12px; font-size:12px; height:33px;}
 .common_lively ul li img{ display:block; float:left; width:33px;}
 
+#nav a{width:107px;}
 
 /*首页second_boxtwo*/
 .second_boxtwo{width:956px;height:260px;margin-top:15px;display:inline-block;}
@@ -27,7 +28,7 @@
 .second_boxtwo .left .bottom span{padding:0 0 0 5px;}
 .second_boxtwo .left .bottom a:hover{color:#d40000;}
 
-.second_boxtwo .middle {width:403px;height:238px;display:block; float:left; margin-left:14px;}
+.second_boxtwo .middle {width:403px;height:238px;display:block; float:left; margin-left:14px;position:relative}
 
 
 .second_boxtwo .middle .server li{float:left;}
@@ -43,7 +44,14 @@
 .second_boxtwo .right .notice li{width:100%;height:30px;line-height:24px;padding-left:8px;float:left;font-size:14px;white-space:nowrap;background:url(../images/li_bg.gif) no-repeat left center;overflow:hidden; text-overflow:ellipsis;}
 .second_boxtwo .right .notice li a:hover{color:#e70304;text-decoration:underline;}
 
-
+.new_into {}
+.new_into {position:absolute;float:left;z-index:10;display:block;width:404px;height:30px;background: #000; opacity: 0.4; margin: 0; z-index: 1; filter: alpha(opacity=40);top:208px;}
+.new_into a{color:#ffffff;;opacity: 1; margin: 0; z-index: 1; filter: alpha(opacity=100);margin-left:17px;display:block}
+.actice a{display:block}
+/*ul.mouse_down{position:absolute;top:208px;float:right;right:0px;list-style:disc;color:white;}
+.mouse_down li{float:left;margin-right:20px;;font-size:30px;background:url(../images/disc01.png);width:30px;height:auto;}*/
+.mouse_down{position:absolute;top:208px;float:right;right:0px;list-style:disc;color:white;}
+.mouse_down a{margin-right:5px;background:url(../images/disc01.png);width:10px;height:40px;}
 /*招录信息*/
 .second_boxthree {width:956px;height:auto; margin-bottom:20px;}
 .second_boxthree .left{width:470px;height:auto;float:left;display:block;}

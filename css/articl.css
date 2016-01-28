@@ -13,11 +13,18 @@
 	display:block;
 	background: url(../images/school.png) no-repeat;
 }
-.textbox .text_right{float:left;margin:8px 0;}
-
+.textbox .text_right{}
+.textbox .ov{float:right;margin:30px 100px 0 0;}
+.textbox .ov a{margin-left:10px;color:#939393}
+.textbox .ov a.red{color:#FF0000}
+.textbox .ov a img{vertical-align:middle;margin-right:5px;}
+.textbox .text_v{float:left;margin:8px 0;font-size:31px}
 .articl_left .nav2{ background:url(../images/summary_navbg.jpg) repeat-x; height:81px;  color:#FFF;  margin-bottom:20px; }
+.articl_left .nav2.xl{ background:url(../images/summary_navbgl.jpg) repeat-x; height:100px;  color:#FFF;  margin-bottom:20px; }
 .articl_left .nav2 .title{ height:29px; line-height:29px; padding-left:10px; color:#FFF;}
 .articl_left .nav2 .select{ background:#FFF;  color:#000; margin:0 auto; height:44px; border-radius:5px; line-height:44px; padding-left:10px; width:590px; }
+.articl_left .nav2 .white_b{border-radius:5px;background:#FFF;height:65px;width:590px;margin-left:10px}
+.articl_left .nav2 .select.xl{ color:#000; margin:0 auto;height:32px;  line-height:32px; padding-left:10px; width:570px; }
 .articl_left .nav2 .select a:hover{ color:#e70304;}
 .articl_left .nav2 .select .active{ color:#e70304;}
 
@@ -30,26 +37,26 @@
 
 /*汇总页面*/
 .sumlistbox_detail{ width:100%; margin-top:20px; margin-bottom:20px; display:inline-block;}
-.sumlistbox_detail li{ width:100%; height:148px; border-bottom:1px solid #adaeae; }
+.sumlistbox_detail li{ width:95%; height:148px; border-bottom:1px solid #adaeae;margin:0 auto; }
 .sumlistbox_detail li .content{ width:95%; font-size:12px; line-height:24px; color:#adaeae;margin-bottom:10px; padding-right:5%;  }
 .sumlistbox_detail li .bottom{ width:100%; font-size:12px; line-height:24px; color:#adaeae;  }
 .sumlistbox_detail li .title{ width:100%; height:40px; font-size:18px; line-height:40px; margin-bottom:10px; }
-.sumlistbox_detail li .bottom .lanmu{ width:30%; float:left;  }
+.sumlistbox_detail li .bottom .lanmu{ width:30%; float:left; color: #000000 }
 .sumlistbox_detail li .bottom .r{ width:30%; float:right; text-align:right; margin-right:50px;  }
 .sumlistbox_detail li .bottom .date{ color:#ffa025; margin-right:10px;  }
-.sumlistbox_detail li .bottom .r .com{ background:url(../images/sign_bg.jpg) no-repeat left center; padding-left:15px; }
+.sumlistbox_detail li .bottom .r .com{ background:url(../images/sign_bg.jpg) no-repeat left center; padding-left:15px;color: #000000 }
 /*汇总页面*/
 .sumlistbox_img { width:100%; height:auto; margin:10px 0; display:block; }
-.sumlistbox_img li{ width:100%; height:105px; display:block; }
+.sumlistbox_img li{ width:95%; height:105px; display:block;  margin:0 auto;}
 /*第一个*/
-.sumlistbox_img .top{ height:190px; width:100%;  }
-.sumlistbox_img .top .topimg{ display:block; float:left; width:300px; height:185px;}
-.sumlistbox_img .top .topcontent{ display:inline-block; float:left; width:300px; height:185px; border-top:2px solid #e70304; background:#fff;}
+.sumlistbox_img .top{ height:190px; width:95%; margin:0 auto; }
+.sumlistbox_img .top .topimg{ display:block; float:left; width:290px; height:185px;}
+.sumlistbox_img .top .topcontent{ display:inline-block; float:left; width:290px; height:185px; border-top:2px solid #e70304; background:#fff;}
 .sumlistbox_img .top .toptitle{ width:270px; 100px; border-bottom:2px solid #999; font-size:18px; margin:0 auto; line-height:35px;}
 .sumlistbox_img .top .detail{ width:270px; 88px; font-size:12px; color:#bdbdbd; line-height:18px;margin:10px auto 0 auto; text-indent:2em;}
 .sumlistbox_img .img{ width:120px; height:105px;  display:block; float:left; }
 .sumlistbox_img .img img{ width:113px; height:84px;  display:block;}
-.sumlistbox_img .content{ width:478px; height:105px;  display:block; float:right; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.sumlistbox_img .content{ width:450px; height:105px;  display:block; float:right; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .sumlistbox_img .t{ font-size:14px; line-height:18px; }
 .sumlistbox_img .t .n{ width:340px; display:block; float:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .sumlistbox_img .t .date{ width:100px; float:right;  display:block;}
@@ -57,7 +64,7 @@
 
 
 /*汇总视频*/
-.sumlistbox_vedio{ width:100%; height:auto; margin:0 0 50px 0; display:inline-block;}
+.sumlistbox_vedio{ width:95%; height:auto; margin:0 0 50px 20px; display:inline-block;}
 .sumlistbox_vedio li{ margin-right:20px; margin-top:10px; width:170px; height:186px;float:left;}
 .sumlistbox_detail li .bottom{ width:100%; font-size:12px; line-height:24px;  }
 .sumlistbox_vedio li .bottom .title{ width:100%;  }
@@ -75,8 +82,8 @@
 .comeball_top a{ width:auto; float:left; display:block; line-height:40px; height:40px; color:#2088f2;}
 
 .articl_left .link_box{ width:100%; line-height:24px; height:24px;   }
-.articl_left .link_box .one{ height:24px; line-height:24px; color:#bab9b9; width:100px; display:block; float:left; text-align:center;}
-.articl_left .link_box .atl{ width:auto; color:#bab9b9; float:right; line-height:24px; height:24px; }
+.articl_left .link_box .one{ height:24px; line-height:24px; color:#bab9b9; width:100px; display:block; float:left; text-align:center;color:#000000}
+.articl_left .link_box .atl{ width:auto; color:#bab9b9; float:right; line-height:24px; height:24px;margin-right:24px }
 .articl_left .link_box .btn{ width:auto; height:24px; width:50px;background:#FFF; color:#000; margin:0 10px 0 0; cursor:pointer; padding-left:6px; line-height:24px; border:1px solid #FFF; }
 .articl_left .link_box .active{ color:#FFF; background:url(../images/summary_btn.jpg) no-repeat; border:1; }
 .articl_left .link_box .btn:hover{  color:#FFF; background:url(../images/summary_btn.jpg) no-repeat;  border:1; }
@@ -103,6 +110,7 @@
 
 .article_page{ width:100%; text-align:center; display:inline-block; height:45px;margin:95px 0 35px 0; }
 .article_page a{ padding:0 9px; text-align:center; height:22px;line-height:22px; color:#000;border:1px solid grey; margin:0 3px; display:inline-block;}
+.article_page a.blue{border:1px solid #e6e6e6; }
 .article_page .curr{color:red }
 .article_page a:hover{background:red;color:#FFFFFF }
 
@@ -116,3 +124,26 @@
 .common_lively p{line-height:15px;padding-left:38px}
 
 .footer_border{border:0;}
+
+/*看图说话*/
+.picsay{width:965px;height:887px;display:block;margin:0 auto;padding:0;}
+.picsay .title_header{font-size:24px;margin:28px 0; }
+.picsay .picbody{margin:0;padding:0;}
+.picsay .picbody .view{height:530px;position:relative;display:block}
+.picsay .picbody .view .preb{background:url(../images/pre_b.jpg) no-repeat center center;position:absolute;width:40px;float:left;height:530px;}
+.picsay .picbody .view .box{position:absolute;left:75px;width:794px;height:529px;overflow:hidden;}
+.picsay .picbody .view .next{position:absolute;right:0;background:url(../images/next_b.jpg) no-repeat center center;width:40px;height:530px;}
+.picsay .picbody .view .box .img_big{position:absolute;height:530px;;float:left;width:25011px;display:block}
+.picsay .picbody .view .box img{ margin:0 4px;}
+.picsay .content{height:120px;position:relative;margin-top:10px;}
+.picsay .content .count{position:absolute;width:40px;float:left;height:110px;font-size:24px;text-align:center;line-height:110px;}
+.picsay .content .say{position:absolute;width:870px;left:75px;;height:110px;margin-top:10px}
+.small_pic { width:auto; height:82px; position:relative;display:block; }
+.small_pic a{margin-left:0}
+.small_pic .box{ width:450px; height:145px; float:left; display:block; position:absolute; left:18px;overflow:hidden; }
+.small_pic .img_gan{margin-top:20px;width:2000px;height:125px;position:absolute;}
+.small_pic .img_gan a{float:left;margin:0 15px;padding:0 auto;width:auto;text-align:center;width:129px;height:88px;}
+.small_pic .img_gan a:hover{background:url(../images/ktsh_lk.gif)}
+.small_pic .img_gan a img{padding:0 auto;margin:0 !impotant;height:80px}
+.small_pic .pre{position:absolute;background:url(../images/pre.gif) no-repeat center center;width:18px;float:left;height:129px;margin-left:0}
+.small_pic .next{position:absolute;right:0;background:url(../images/next.gif) no-repeat center center;width:18px;height:129px;margin-left:0}
